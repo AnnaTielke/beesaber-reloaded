@@ -47,6 +47,7 @@ function OnePlayer({
       <td>
         {handleSelect !== undefined && !isAlreadyAdded && (
           <MDBIcon
+            data-testid="select-icon"
             onClick={() => handleSelect(player)}
             fas
             icon={isOnlyResult ? 'minus-circle' : 'plus-circle'}
